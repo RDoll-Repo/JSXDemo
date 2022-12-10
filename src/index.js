@@ -11,12 +11,20 @@ const root = ReactDOM.createRoot(el);
 // Step 4: Create a component
 function App() {
     let message = 'Bye there!';
+    let name = 'Roland';
+    let age = 26
 
     if(Math.random() > 0.5) {
         message = 'Hello there!';
     }
 
-    return <h1>{new Date().toLocaleTimeString()}</h1>;
+    return (
+        <div>
+            <h1>{message}</h1>
+            <h1>{new Date().toLocaleTimeString()}</h1>
+            <h1>My name is {name}. I am {age} years old.</h1>
+        </div>
+    );
     //return <h1>{message}</h1>;
 }
 
