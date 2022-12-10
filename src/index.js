@@ -24,7 +24,11 @@ function App() {
             <h1>{message}</h1>
             <h1>{new Date().toLocaleTimeString()}</h1>
             <h1>My name is {name}. I am {age} years old.</h1>
-            <input style={{border: '3px solid red'}} type={inputType} min={5} />
+            <input style={{border: '3px solid red', marginBottom: '10px'}} type={inputType} min={5} />
+            <div>
+                <textarea autoFocus></textarea>
+            </div>
+            <input placeholder='placeholder text'/>
         </div>
     );
     //return <h1>{message}</h1>;
